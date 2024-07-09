@@ -29,4 +29,23 @@ fun main() {
 
     var myBool = true
     println(myBool)
+
+   //Constantes
+
+   val myConst = "Mi propiedad constante"
+   //Las constantes no pueden modificarse
+
+    //Controles de flujos
+
+    myInt = 10
+    myString = "hola"
+
+    if (myInt == 11 && myString == "hola") {
+      println("Los valores coinciden")
+    } else if (myInt == 10 || myString == "hola") {
+        println("El valor es 10")
+    } else {
+        println("El valor es distinto a 11 y de 10")
+    }
+
 }

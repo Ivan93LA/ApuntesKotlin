@@ -45,7 +45,75 @@ fun main() {
     } else if (myInt == 10 || myString == "hola") {
         println("El valor es 10")
     } else {
-        println("El valor es distinto a 11 y de 10")
+        println("El valor no es 10 ni 11")
     }
 
+//Listas
+
+    var myList = listOf<String>("Ivan", "Leon", "Alvarez")
+    println(myList[1])
+    //Las listas no se pueden modificar
+    var myList2 = mutableListOf("Nombre", "apellido", "Nickname")
+    myList2.add("31 años")
+    println(myList2)
+
+    //sets
+//No admiten duplicados
+    val mySet = setOf("Ivan2", "Leon2", "Alvarez2")
+    println(mySet)
+
+    //Mapas
+    //Estructura no ordenada de tipo clave valor
+    val myMap = mutableMapOf("Ivan" to 31)
+    myMap.put("Paula" , 25)
+    println(myMap["Paula"])
+
+    //bucles
+    for (value in myList){
+        println(value)
+    }
+
+    for (value in mySet){
+        println(value)
+    }
+    var myCounter = 0
+    while (myCounter  < myList.count()){
+        println(myList[myCounter])
+        myCounter++
+
+
+    }
+
+
+    //Opcionales
+
+    var myOptional:String? = null //Puede ser un texto llegado el caso, de ahi ponerle la interrogación
+    println(myOptional)
+    myOptional = "Ejemplo de texto"
+    println(myOptional)
+
+
+    //Funciones
+
+    myFunction()
+    var myClass = MyClass(name = "Ivan", age = 31)
+    println(myClass.age)
+
 }
+    fun myFunction () {
+        println("Esto es una funcion")
+
+    }
+
+//clases
+
+class MyClass (val name: String, val age: Int){
+
+
+
+}
+
+
+
+
+
